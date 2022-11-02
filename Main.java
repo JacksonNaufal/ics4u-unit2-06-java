@@ -15,6 +15,35 @@
  */
 final class Main {
 
+    /**
+    * This is 212.
+    */
+    public static final int TWOTWELVE = 212;
+
+    /**
+    * This is 422.
+    */
+    public static final int FOURTWENTYTWO = 422;
+
+    /**
+     * This is 0.
+    */
+    public static final int ZERO = 0;
+
+    /**
+     *  This is 5000.
+    */
+    public static final int FIVETHOUSAND = 5000;
+
+    /**
+     * This is 2.
+         */
+    public static final int TWO = 2;
+
+    /**
+    * This is 4.
+    */
+    public static final int FOUR = 4;
 
     /**
     * Prevent instantiation.
@@ -37,26 +66,26 @@ final class Main {
     */
     public static void main(final String[] args) {
 
-       Biplane biplane = new Biplane();
-       biplane.setSpeed(212);
-       System.out.println(biplane.getSpeed());
+        final Biplane biplane = new Biplane();
+        biplane.setSpeed(TWOTWELVE);
+        System.out.println(biplane.getSpeed());
 
-       Boeing boeing = new Boeing();
-       boeing.setSpeed(422);
-       System.out.println(boeing.getSpeed());
-
-       int x = 0;
-
-       while (x < 4) {
-        boeing.accelerate();
+        final Boeing boeing = new Boeing();
+        boeing.setSpeed(FOURTWENTYTWO);
         System.out.println(boeing.getSpeed());
-        if (boeing.getSpeed() > 5000) {
-            biplane.setSpeed(biplane.getSpeed() * 2);
-        } else {
+
+        int counter = ZERO;
+
+        while (counter < FOUR) {
             boeing.accelerate();
+            System.out.println(boeing.getSpeed());
+            if (boeing.getSpeed() > FIVETHOUSAND) {
+                biplane.setSpeed(biplane.getSpeed() * TWO);
+            } else {
+                boeing.accelerate();
+            }
+            counter++;
         }
-        x++;
-       }
         System.out.println(biplane.getSpeed());
         System.out.println("\nDone!");
     }

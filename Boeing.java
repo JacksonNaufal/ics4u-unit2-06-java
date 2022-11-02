@@ -8,8 +8,8 @@
 */
 
 /**
- * This is the class for Vehicle.
- * Make class Vehicle.
+ * This is the class for Boeing.
+ * Make class Boeing.
  */
 
 public class Boeing extends Biplane {
@@ -17,16 +17,14 @@ public class Boeing extends Biplane {
     /**
      * This returns the new speed.
      *
-     * @return this returns the newSpeed.
+     * @param newSpeed this returns the newSpeed.
      */
     public void setSpeed(int newSpeed) {
         super.setSpeed(newSpeed * 2);
     }
 
     /**
-     * This sets the licensePlate.
-     *
-     * @param newSpeed this is the new variable.
+     * This is the accelerate function.
      */
     public void accelerate() {
         super.setSpeed(getSpeed() * 2);

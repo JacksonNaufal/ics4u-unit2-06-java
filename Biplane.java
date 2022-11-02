@@ -17,12 +17,12 @@ public class Biplane {
     /**
      * This is the speed.
      */
-    protected int speed = 0;
+    private int speed;
 
     /**
-     * This returns the licensePlate.
+     * This returns the speed.
      *
-     * @return this returns the licensePlate.
+     * @return this returns the speed.
      */
     public int getSpeed() {
         return this.speed;
@@ -31,10 +31,10 @@ public class Biplane {
     /**
      * This sets the licensePlate.
      *
-     * @param licensePlateNew this is the new variable.
+     * @param newSpeed this is the new variable.
      */
     public void setSpeed(int newSpeed) {
         this.speed = newSpeed;
     }
 
-    }
+}
